@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "TsLKSEUAqwCLSLTx6l/h6PPZE9K+EHD/L8TiUcbU8pnhYioo/4MKL+rXfZk0vj9pi2csgNqp7mJB80B0oz6NYg==",
+  "dgSpecHash": "gG9qWs/87oi80T4hBkwtOBfp13jVDMUf7orPFfyYbTjft59WHqHt+ITEHDVrATBNt+JAX3Lr6Z32x0/3g8wRXA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andrei\\Desktop\\Stuff\\school work\\dezvoltarea aplicatiior web\\Proiect\\QuertyKey_DAW\\QuertyKey_DAW\\QuertyKey_DAW.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Andrei\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.1\\microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.1\\microsoft.entityframeworkcore.analyzers.6.0.1.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.1\\microsoft.entityframeworkcore.design.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.1\\microsoft.entityframeworkcore.relational.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",

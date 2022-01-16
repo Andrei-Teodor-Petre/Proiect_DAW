@@ -17,10 +17,8 @@ namespace QuertyKey_DAW.EF
         public DbSet<User> Users { get; set; }
 
 
-        public DataContext()
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-
-           
         }
 
 
@@ -34,10 +32,6 @@ namespace QuertyKey_DAW.EF
                 .HasOne(s => s.Keycap)
                 .WithMany(g => g.Keyboards);
 
-            modelBuilder.Entity<Switch>()
-                .HasMany(v => v.Keyboards)
-                .WithOne(a => a.Switch);
-
             modelBuilder.Entity<User>()
                 .HasMany(a => a.Orders)
                 .WithOne(a => a.User);
@@ -50,6 +44,14 @@ namespace QuertyKey_DAW.EF
             modelBuilder.Entity<Order>().HasMany(a => a.Accessories).WithMany(a => a.Orders);
             modelBuilder.Entity<Order>().HasMany(a => a.Specialties).WithMany(a => a.Orders);
 
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            if (!options.IsConfigured)
+            {
+                options.UseNpgsql("User ID=postgres;Password=andrei;Host=localhost;Port=5432;Database=QuertyKey_DAW;");
+            }
         }
     }
 }

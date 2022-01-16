@@ -30,3 +30,5 @@ C:\Users\Andrei\Desktop\Stuff\school work\dezvoltarea aplicatiior web\Proiect\Qu
 C:\Users\Andrei\Desktop\Stuff\school work\dezvoltarea aplicatiior web\Proiect\QuertyKey_DAW\QuertyKey_DAW\obj\Debug\net6.0\ref\QuertyKey_DAW.dll
 C:\Users\Andrei\Desktop\Stuff\school work\dezvoltarea aplicatiior web\Proiect\QuertyKey_DAW\QuertyKey_DAW\obj\Debug\net6.0\QuertyKey_DAW.pdb
 C:\Users\Andrei\Desktop\Stuff\school work\dezvoltarea aplicatiior web\Proiect\QuertyKey_DAW\QuertyKey_DAW\obj\Debug\net6.0\QuertyKey_DAW.genruntimeconfig.cache
+C:\Users\Andrei\Desktop\Stuff\school work\dezvoltarea aplicatiior web\Proiect\QuertyKey_DAW\QuertyKey_DAW\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Andrei\Desktop\Stuff\school work\dezvoltarea aplicatiior web\Proiect\QuertyKey_DAW\QuertyKey_DAW\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
