@@ -1,7 +1,9 @@
-/node_modules/
+node_modules/
 *.dll
 *.pdb
 *.cache
-/bin/
-/obj/
-
+bin/
+obj/
+src/
+e2e/
+.vs/
