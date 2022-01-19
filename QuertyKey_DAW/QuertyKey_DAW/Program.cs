@@ -32,7 +32,7 @@ builder.Services.AddTransient<SpecialtyRepository>();
 builder.Services.AddTransient<SwitchRepository>();
 builder.Services.AddTransient<UserRepository>();
 
-builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+builder.Services.AddTransient<UnitOfWork>();
 #endregion
 
 // Configure the HTTP request pipeline.

@@ -2,20 +2,27 @@
 
 namespace QuertyKey_DAW.Controllers
 {
-    public class UsersController : Controller
+    public class UsersController : BaseController
     {
+
+        public UsersController(UnitOfWork.UnitOfWork unitOfWork) : base(unitOfWork)
+        {
+
+        }
+
         public IActionResult Index()
         {
             return View();
         }
-
 
         [HttpGet]
         [Route("List")]
         public IActionResult GetListedItems()
         {
 
+            var items = this._unitOfWork.Users.GetAll();
             return Ok();
+            
         }
 
         [HttpPost]
