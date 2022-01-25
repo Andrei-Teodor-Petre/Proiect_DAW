@@ -21,7 +21,7 @@ namespace QuertyKey_DAW.Controllers
         {
             var items = this._unitOfWork.Users.GetAll();
             this._unitOfWork.Complete();
-            return Ok();
+            return Ok(items);
             
         }
 
@@ -40,7 +40,7 @@ namespace QuertyKey_DAW.Controllers
                 newUser.Role = 0;
                 newUser.Username = user.Username;
                 newUser.Password = user.Password;
-                newUser.CreatedOn = DateOnly.Parse(DateTime.Now.ToString());
+                newUser.CreatedOn = DateOnly.FromDateTime(DateTime.Now);
                 newUser.Age = user.Age;
 
                 this._unitOfWork.Users.Add(newUser);
