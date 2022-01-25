@@ -2,13 +2,15 @@
 
 namespace QuertyKey_DAW.Controllers
 {
-    public class KeyboardsController : Controller
+    [ApiController]
+    [Route("Keyboard")]
+    public class KeyboardsController : BaseController
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
 
+        public KeyboardsController(UnitOfWork.UnitOfWork unitOfWork) : base(unitOfWork)
+        {
+
+        }
 
         [HttpGet]
         [Route("List")]

@@ -2,13 +2,16 @@
 
 namespace QuertyKey_DAW.Controllers
 {
-    public class MerchController : Controller
+    [ApiController]
+    [Route("Merch")]
+    public class MerchController : BaseController
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
 
+
+        public MerchController(UnitOfWork.UnitOfWork unitOfWork) : base(unitOfWork)
+        {
+
+        }
 
         [HttpGet]
         [Route("List")]

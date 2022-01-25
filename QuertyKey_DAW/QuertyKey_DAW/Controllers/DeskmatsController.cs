@@ -4,8 +4,13 @@ namespace QuertyKey_DAW.Controllers
 {
     [ApiController]
     [Route("Deskmat")]
-    public class DeskmatsController : Controller
+    public class DeskmatsController : BaseController
     {
+
+        public DeskmatsController(UnitOfWork.UnitOfWork unitOfWork) : base(unitOfWork)
+        {
+
+        }
 
         [HttpGet]
         [Route("List")]

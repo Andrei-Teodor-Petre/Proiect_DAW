@@ -2,11 +2,14 @@
 
 namespace QuertyKey_DAW.Controllers
 {
-    public class SpecialtiesController : Controller
+    [ApiController]
+    [Route("Specialty")]
+    public class SpecialtiesController : BaseController
     {
-        public IActionResult Index()
+
+        public SpecialtiesController(UnitOfWork.UnitOfWork unitOfWork) : base(unitOfWork)
         {
-            return View();
+
         }
 
 

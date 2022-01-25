@@ -2,14 +2,15 @@
 
 namespace QuertyKey_DAW.Controllers
 {
-    public class KeycapsController : Controller
+    [ApiController]
+    [Route("Keycap")]
+    public class KeycapsController : BaseController
     {
-        public IActionResult Index()
+
+        public KeycapsController(UnitOfWork.UnitOfWork unitOfWork) : base(unitOfWork)
         {
-            return View();
+
         }
-
-
         [HttpGet]
         [Route("List")]
         public IActionResult GetListedItems()

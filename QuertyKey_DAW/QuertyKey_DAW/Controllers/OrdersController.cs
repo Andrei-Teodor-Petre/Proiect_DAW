@@ -2,13 +2,14 @@
 
 namespace QuertyKey_DAW.Controllers
 {
-    public class OrdersController : Controller
+    [ApiController]
+    [Route("Order")]
+    public class OrdersController : BaseController
     {
-        public IActionResult Index()
+        public OrdersController(UnitOfWork.UnitOfWork unitOfWork) : base(unitOfWork)
         {
-            return View();
-        }
 
+        }
 
         [HttpGet]
         [Route("List")]

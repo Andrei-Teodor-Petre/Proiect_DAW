@@ -2,13 +2,14 @@
 
 namespace QuertyKey_DAW.Controllers
 {
-    public class SwitchesController : Controller
+    [ApiController]
+    [Route("Switch")]
+    public class SwitchesController : BaseController
     {
-        public IActionResult Index()
+        public SwitchesController(UnitOfWork.UnitOfWork unitOfWork) : base(unitOfWork)
         {
-            return View();
-        }
 
+        }
 
         [HttpGet]
         [Route("List")]
