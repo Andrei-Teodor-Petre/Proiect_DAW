@@ -4,13 +4,12 @@ namespace QuertyKey_DAW.Controllers
 {
     [ApiController]
     [Route("Accessory")]
-    public class AccesoriesController : Controller
+    public class AccesoriesController : BaseController
     {
-        public IActionResult Index()
+        public AccesoriesController(UnitOfWork.UnitOfWork unitOfWork) : base(unitOfWork)
         {
-            return View();
-        }
 
+        }
 
         [HttpGet]
         [Route("List")]

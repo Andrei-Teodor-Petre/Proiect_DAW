@@ -13,8 +13,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
-
 builder.Services.AddDbContext<QuertyKey_DAWContext>(
     options =>
         options.UseNpgsql(builder.Configuration["ConnectionString"])
@@ -34,6 +32,10 @@ builder.Services.AddTransient<UserRepository>();
 
 builder.Services.AddTransient<UnitOfWork>();
 #endregion
+
+
+var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
