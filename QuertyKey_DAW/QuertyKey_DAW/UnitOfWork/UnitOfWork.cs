@@ -10,6 +10,15 @@ namespace QuertyKey_DAW.UnitOfWork
         public UnitOfWork(QuertyKey_DAWContext context)
         {
             this._context = context;
+            this.Accesories = new AccessoryRepository(_context);
+            this.Deskmats = new DeskmatRepository(_context);
+            this.Keyboards = new KeyboardRepository(_context);
+            this.Keycaps = new KeycapRepository(_context);
+            this.Merch = new MerchRepository(_context);
+            this.Orders = new OrderRepository(_context);
+            this.Specialty = new SpecialtyRepository(_context);
+            this.Switches = new SwitchRepository(_context);
+            this.Users = new UserRepository(_context);
 
         }
 
