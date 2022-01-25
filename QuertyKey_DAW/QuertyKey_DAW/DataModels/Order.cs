@@ -16,7 +16,7 @@ namespace QuertyKey_DAW.DataModels
         }
 
         public Guid Id { get; set; }
-        public DateOnly Date { get; set; }
+        public DateTime Date { get; set; }
         public Guid UserId { get; set; }
 
         public virtual User User { get; set; } = null!;

@@ -40,13 +40,15 @@ namespace QuertyKey_DAW.Controllers
                 newUser.Role = 0;
                 newUser.Username = user.Username;
                 newUser.Password = user.Password;
-                newUser.CreatedOn = DateOnly.FromDateTime(DateTime.Now);
+                newUser.Address = user.Address;
+                newUser.CreatedOn =DateTime.Now;
                 newUser.Age = user.Age;
+                newUser.Role = user.Role;
 
                 this._unitOfWork.Users.Add(newUser);
 
                 var addedUser = this._unitOfWork.Users.Find(user => user.Username == newUser.Username).FirstOrDefault();
-                return Ok(addedUser);
+                return Ok();
             }
             catch (Exception ex)
             {

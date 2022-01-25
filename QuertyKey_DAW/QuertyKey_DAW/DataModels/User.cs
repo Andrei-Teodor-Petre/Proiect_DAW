@@ -15,7 +15,7 @@ namespace QuertyKey_DAW.DataModels
         public string Username { get; set; } = null!;
         public string Password { get; set; } = null!;
         public string Address { get; set; } = null!;
-        public DateOnly CreatedOn { get; set; }
+        public DateTime CreatedOn { get; set; }
         public int Age { get; set; }
         public int Role { get; set; }
 

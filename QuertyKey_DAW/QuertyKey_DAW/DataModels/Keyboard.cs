@@ -13,7 +13,7 @@ namespace QuertyKey_DAW.DataModels
         public Guid Id { get; set; }
         public string Name { get; set; } = null!;
         public string Description { get; set; } = null!;
-        public DateOnly AddedOn { get; set; }
+        public DateTime AddedOn { get; set; }
         public int Quantity { get; set; }
         public decimal Price { get; set; }
         public bool IsHotswap { get; set; }
