@@ -48,7 +48,7 @@ namespace QuertyKey_DAW.Controllers
                 this._unitOfWork.Users.Add(newUser);
 
                 var addedUser = this._unitOfWork.Users.Find(user => user.Username == newUser.Username).FirstOrDefault();
-                return Ok();
+                return Ok(addedUser);
             }
             catch (Exception ex)
             {
@@ -63,13 +63,13 @@ namespace QuertyKey_DAW.Controllers
         {
             try
             {
-                if (!this._unitOfWork.Users.Find(usr => usr.Username == user.Username).Any())
+                var foundItem = this._unitOfWork.Users.Find(swt => swt.Username == user.Username).FirstOrDefault();
+                if (foundItem == null)
                 {
-                    return BadRequest("Cannot find the requested user");
+                    return BadRequest("Cannot find the requested User");
                 }
 
-                var foundUser = this._unitOfWork.Users.Find(usr => user.Username == usr.Username).FirstOrDefault();
-                return Ok(foundUser);
+                return Ok(foundItem);
             }
             catch(Exception ex)
             {
