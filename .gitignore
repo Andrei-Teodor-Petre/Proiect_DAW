@@ -4,6 +4,5 @@ node_modules/
 *.cache
 bin/
 obj/
-src/
 e2e/
 .vs/
