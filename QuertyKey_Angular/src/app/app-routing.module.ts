@@ -1,20 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AccessoryComponent } from './accessory/accessory.component';
+import { AdminComponent } from './admin/admin.component';
+import { DeskmatComponent } from './deskmat/deskmat.component';
+import { HomeComponent } from './home/home.component';
+import { KeyboardComponent } from './keyboard/keyboard.component';
+import { KeycapComponent } from './keycap/keycap.component';
 import { LoginComponent } from './login/login.component';
+import { MerchComponent } from './merch/merch.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SpecialtyComponent } from './specialty/specialty.component';
+import { SwitchComponent } from './switch/switch.component';
 
 const routes: Routes = [
-  {path:'', pathMatch: 'full', redirectTo: '/app-login'},
+  {path:'', component: HomeComponent},
   {path:'login', component: LoginComponent},
-  {path:'keyboard', component: LoginComponent},
-  {path:'keycap', component: LoginComponent},
-  {path:'deskmat', component: LoginComponent},
-  {path:'switch', component: LoginComponent},
-  {path:'accessory', component: LoginComponent},
-  {path:'merch', component: LoginComponent},
-  {path:'specialty', component: LoginComponent},
-  {path:'profile', component: LoginComponent},
-  {path:'admin', component: LoginComponent},
-  {path:'**', component: LoginComponent}
+  {path:'keyboard', component: KeyboardComponent},
+  {path:'keycap', component: KeycapComponent},
+  {path:'deskmat', component: DeskmatComponent},
+  {path:'switch', component: SwitchComponent},
+  {path:'accessory', component: AccessoryComponent},
+  {path:'merch', component: MerchComponent},
+  {path:'specialty', component: SpecialtyComponent},
+  {path:'profile', component: ProfileComponent},
+  {path:'admin', component: AdminComponent},
+  {path:'**', component: HomeComponent}
 ];
 
 @NgModule({
