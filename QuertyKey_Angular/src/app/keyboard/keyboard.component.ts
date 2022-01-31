@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { KeyboardService } from '../services/keyboard.service';
 
 @Component({
   selector: 'app-keyboard',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KeyboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private keyboardService: KeyboardService) { }
 
   ngOnInit(): void {
+    this.keyboardService.getAllKeyboards().subscribe(resp => {
+      console.table(resp);
+    }, err => {
+      //this should be replaced by the notification service
+      console.log(err);
+    });
   }
 
 }
